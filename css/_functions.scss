@@ -1,0 +1,13 @@
+
+@mixin fullPage($text_color, $bg_color) {
+    height: 100vh;
+    color: $text_color;
+    background-color: $bg_color;
+}
+
+@mixin flecCenter (){
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+}

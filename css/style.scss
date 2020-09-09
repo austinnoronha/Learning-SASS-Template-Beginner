@@ -1,19 +1,5 @@
-$glb_text_size: 15px;
-$glb_text_color: #333;
-$glb_text_color_inverse: #fff;
-$header_bg_color: blueviolet;
-$header_text_color: #fff;
-
-@mixin fullPage() {
-    height: 100vh;
-}
-
-@mixin flecCenter (){
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    justify-content: space-evenly;
-}
+@import './variables';
+@import './functions';
 
 *, body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -34,20 +20,22 @@ a {
 
 header{
     @include flecCenter();
-    @include fullPage();
-    color: $glb_text_color_inverse;
-    background-color: $header_bg_color;
+    @include fullPage($glb_text_color_inverse, $header_bg_color);
     
     a {
         color: $header_text_color;
+        background: #4570fc;
+        padding: 10px 20px;
+        border-radius: 6px;
+        transition: .22s;
 
         &:hover{
-            color: #333;
+            transform: scale(1.1);
         }
     }
 }
 
 .container {
     @include flecCenter();
-    @include fullPage();
+    @include fullPage($glb_text_color, $page_bg_color_yellow);
 }

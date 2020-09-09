@@ -28,15 +28,21 @@ header {
           justify-content: space-evenly;
   height: 100vh;
   color: #fff;
-  background-color: blueviolet;
+  background-color: #add7fa;
 }
 
 header a {
   color: #fff;
+  background: #4570fc;
+  padding: 10px 20px;
+  border-radius: 6px;
+  -webkit-transition: .22s;
+  transition: .22s;
 }
 
 header a:hover {
-  color: #333;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .container {
@@ -51,5 +57,7 @@ header a:hover {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   height: 100vh;
+  color: #333;
+  background-color: #f5ff66;
 }
 /*# sourceMappingURL=style.css.map */
