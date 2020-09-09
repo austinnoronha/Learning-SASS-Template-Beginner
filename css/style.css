@@ -41,8 +41,8 @@ header a, .container a, footer a {
 }
 
 header a:hover, .container a:hover, footer a:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .container {
