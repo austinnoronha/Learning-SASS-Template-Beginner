@@ -15,7 +15,7 @@ a {
   text-decoration: none;
 }
 
-header {
+header, .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,7 +31,7 @@ header {
   background-color: #add7fa;
 }
 
-header a {
+header a, .container a {
   color: #fff;
   background: #4570fc;
   padding: 10px 20px;
@@ -40,24 +40,13 @@ header a {
   transition: .22s;
 }
 
-header a:hover {
+header a:hover, .container a:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  height: 100vh;
-  color: #333;
   background-color: #f5ff66;
+  color: #333;
 }
 /*# sourceMappingURL=style.css.map */

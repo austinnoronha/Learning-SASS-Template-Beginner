@@ -36,6 +36,8 @@ header{
 }
 
 .container {
-    @include flecCenter();
-    @include fullPage($glb_text_color, $page_bg_color_yellow);
+    @extend header;
+
+    background-color: $page_bg_color_yellow;
+    color: $glb_text_color;
 }
