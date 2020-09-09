@@ -19,7 +19,7 @@ a {
 }
 
 header{
-    @include flecCenter();
+    @include flexCenter();
     @include fullPage($glb_text_color_inverse, $header_bg_color);
     
     a {
@@ -37,7 +37,12 @@ header{
 
 .container {
     @extend header;
-
     background-color: $page_bg_color_yellow;
     color: $glb_text_color;
+    flex-direction: column;
+}
+
+footer {
+    @extend header;
+    background-color: $footer_bg_color;
 }

@@ -15,7 +15,7 @@ a {
   text-decoration: none;
 }
 
-header, .container {
+header, .container, footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,7 +31,7 @@ header, .container {
   background-color: #add7fa;
 }
 
-header a, .container a {
+header a, .container a, footer a {
   color: #fff;
   background: #4570fc;
   padding: 10px 20px;
@@ -40,7 +40,7 @@ header a, .container a {
   transition: .22s;
 }
 
-header a:hover, .container a:hover {
+header a:hover, .container a:hover, footer a:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -48,5 +48,13 @@ header a:hover, .container a:hover {
 .container {
   background-color: #f5ff66;
   color: #333;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer {
+  background-color: #f5e3e3;
 }
 /*# sourceMappingURL=style.css.map */
