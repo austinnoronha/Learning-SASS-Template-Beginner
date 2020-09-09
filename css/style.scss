@@ -1,0 +1,53 @@
+$glb_text_size: 15px;
+$glb_text_color: #333;
+$glb_text_color_inverse: #fff;
+$header_bg_color: blueviolet;
+$header_text_color: #fff;
+
+@mixin fullPage() {
+    height: 100vh;
+}
+
+@mixin flecCenter (){
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+*, body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: $glb_text_size;
+    font-weight: normal;
+    color: $glb_text_color;
+    line-height: 18px;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header{
+    @include flecCenter();
+    @include fullPage();
+    color: $glb_text_color_inverse;
+    background-color: $header_bg_color;
+    
+    a {
+        color: $header_text_color;
+
+        &:hover{
+            color: #333;
+        }
+    }
+}
+
+.container {
+    @include flecCenter();
+    @include fullPage();
+}
